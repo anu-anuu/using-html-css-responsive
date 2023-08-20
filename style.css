@@ -7,7 +7,8 @@ body {
 
 main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -16,6 +17,7 @@ main {
     background-color: #FFFFFF;
     width: 870px;
     padding: 30px;
+    margin-top: 21px;
 }
 
 /* all players */
@@ -90,4 +92,41 @@ hr {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 26px;
+}
+
+/* latest courses */
+.course .courses-banner img {
+    width: 224px;
+    height: 104px;
+}
+
+.fa-star {
+    font-size: 12px;
+}
+
+.filled {
+    color: #FFC014;
+
+}
+
+.empty {
+    color: #AEAEAE;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+    .players {
+        background-color: red;
+    }
 }
